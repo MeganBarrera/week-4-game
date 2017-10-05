@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+	
+	<title>Crystal Collector</title>
+  <!---CSS-->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!---BootStrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <!---header-->
+<div class="container">
+	<div class="row">
+		<div class="header">
+			<h1>Crystal Collector</h1>
+		</div>
+	</div>
+  <!---directions-->
+	<div class="row">
+  		<p>You will be given a random number at the start of the game.
+  			<br></br>
+  		There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+  			<br></br>
+  		You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+  			<br></br>
+  		The value of each crystal is hidden from you until you click on it.
+  			<br></br>
+  		Each time when the game starts, the game will change the values of each crystal.
+  		</p>
+ 	</div>
+ 
+  <!---Random Number Generator-->
+	<div class="row" id="randomNumber"></div>
+  <!---Wins-->
+    <div class="row">
+    	<h3>Wins: </h3>
+    		<span id="wins"></span>
+    </div>
+  <!---Losses-->
+    <div class="row">
+        <h3>Losses: </h3>
+        	<span id="losses"></span>
+    </div>
+  <!---Buttons-->
+	<div class="row">
+ 		<button id="button1"></button>
+    	<button id="button2"></button>
+    	<button id="button3"></button>
+    	<button id="button4"></button>
+    </div>
+  <!---Score-->
+  	<div class="row">
+  		<h3>Your Total Score is:</h3>
+  	</div>
+  <!---Score Generator-->
+	<div class="row" id="score"></div>
+
+
+ <!---JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+   
+</body>
+</html>
+
+
+
+
+
