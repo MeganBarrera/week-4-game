@@ -1,13 +1,18 @@
 //Random Number Generator
+$( document ).ready(function(){
+buttons = ['assets/images/crystal1.jpg', 'assets/images/crystal2.jpg', 'assets/images/crystal3.jpg', 'assets/images/crystal4.jpg'];
+
 var wins = 0;
 var losses = 0;
+var score = 0;
+var min = 19;
+var max = 120;
 
-function numberGenerator(points) {
-	var min = 19
-	var max = 120
-
-	var randomNumber = Math.floor(Math.random() * 10) + 18;
-	randomNumber.addClass("#randomNumber")
+window.onload = generateRandomNumber;
+function generateRandomNumber() {
+	var randomNumber = (Math.floor(Math.random() * 10) + 18);
+	$("#randomNumber").text(randomNumber)
+	document.getElementByID(".randomNumber").innerHTML = number;
 
 //Wins
 	if (randomNumber === points) {
@@ -15,42 +20,29 @@ function numberGenerator(points) {
 		$("#wins").html("<h3>" + wins + "</h3>");
 	}
 //Losses
-	else {
+	else (points > randomNumber)
     	losses++;
     	$("#losses").html("<h3>" + losses + "</h3>");
-	}
+//Score
+function restart() {
+	$("#score").text(0);
+};
+};
 
 //Buttons
-	$("#button1").on("click", function() {
+	$("button").on("click", function() {
+		var min = 19
+		var max = 120
 		var randomNumber = Math.floor(Math.random() * 10) + 18;
-		randomNumber.addClass("#randomNumber")
-	}
+		randomNumber.addClass("#points")
 
-
-$("#heads").on("click", function() {
-  headsCount++;
-  $("#heads-chosen").text(headsCount);
-  $("#guess").html("<b>Heads</b>");
-  flipThatCoin(0);
-});
-
-$("#tails").on("click", function() {
-  tailsCount++;
-  $("#tails-chosen").text(tailsCount);
-  $("#guess").html("<b>Tails</b>");
-  flipThatCoin(1);
-});
-
-
-
-}
 
 	var min = 1
 	var max = 12
 
 	var randomNumber = Math.floor(Math.random() * 12);
 
-
+});
 //Score
 
 //Score Generator
